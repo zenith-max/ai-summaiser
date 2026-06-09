@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "server": "node server/index.js",
+    "server": "python -m uvicorn fastapi_backend:app --port 4000 --app-dir server --reload",
     "dev:all": "concurrently \"npm run server\" \"npm run dev\"",
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0"

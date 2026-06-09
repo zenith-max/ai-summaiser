@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const API_URL = 'http://localhost:4000';
+const API_URL = 'http://localhost:8000';
 
 export default function AuthModal({ onClose, onAuth }) {
   const [mode, setMode] = useState('login');
